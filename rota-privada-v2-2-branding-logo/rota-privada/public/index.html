@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111115"><meta name="description" content="Gestão de entregadores privados e integração oficial com pedidos iFood.">
+  <title>⚡</title>
+  <link rel="icon" href="/brand/logo-symbol-32.png" sizes="32x32" type="image/png"><link rel="icon" href="/brand/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/brand/logo-symbol-180.png"><link rel="manifest" href="/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="stylesheet" href="/styles.css?v=2.1.1">
+</head>
+<body>
+<svg aria-hidden="true" class="sprite" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="2"/><path d="M9 19h6a5 5 0 0 0 0-10H9a4 4 0 0 1 0-8h7"/><path d="m13 1 3 0 0 3"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-package" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="M3 7v10l9 5 9-5V7M12 12v10"/><path d="m7.5 4.5 9 5"/></symbol>
+  <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="m5.5 17.5 5-9 4 9H10l-3-6h4M13 5h3l2.5 12.5"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="16" rx="3"/><path d="M2 9h20M16 15h2M5 5V3h14"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-trending" viewBox="0 0 24 24"><path d="m3 17 7-7 4 4 7-7M15 7h6v6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 18v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M20 18v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="6" r="4"/><path d="M17 2.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 18 2 21V6l7-3m0 15 6 3m-6-3V3m6 18 7-3V3l-7 3m0 15V6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10m-7 6h4"/></symbol>
+  <symbol id="i-log-out" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="m3 17 0 4 4 0 13-13-4-4L3 17ZM14 6l4 4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s9-4 9-11V4l-9-2-9 2v7c0 7 9 11 9 11Z"/><path d="m9 11 2 2 4-4"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+</svg>
+
+<section id="loginScreen" class="login-screen">
+  <div class="login-visual">
+    <div class="login-brand symbol-brand"><img src="/brand/logo-symbol-192.png" alt="Logo da plataforma" class="brand-logo-image"><span class="sr-only">Plataforma de entregas</span></div>
+    <div class="login-copy"><div class="eyebrow light">GESTÃO NA VELOCIDADE DO SEU NEGÓCIO</div><h1>Suas entregas.<br><em>Sob controle.</em></h1><p>Organize pedidos, conecte entregadores e acompanhe os resultados de toda a operação em um só lugar.</p><div class="login-pills"><span>● Integração iFood</span><span>● Equipe conectada</span><span>● Controle financeiro</span></div></div>
+    <div class="login-foot">A plataforma da sua operação de entregas privadas.</div>
+    <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="route-trail"></div>
+  </div>
+  <div class="login-panel"><div class="mobile-brand symbol-brand"><img src="/brand/logo-symbol-64.png" alt="Logo da plataforma" class="brand-logo-image mobile-logo"><span class="sr-only">Plataforma de entregas</span></div><div class="login-form-wrap"><div class="mini-mark"><svg><use href="#i-shield"/></svg></div><div class="eyebrow">ACESSO SEGURO</div><h2>Bem-vindo de volta<span class="dot">.</span></h2><p>Entre com suas credenciais para acessar sua operação.</p><form id="loginForm" class="login-form"><label for="loginUser">Usuário</label><div class="input-icon"><svg><use href="#i-user"/></svg><input id="loginUser" name="username" placeholder="Seu nome de usuário" required autocomplete="username" maxlength="80"></div><label for="loginPassword">Senha</label><div class="input-icon"><svg><use href="#i-lock"/></svg><input id="loginPassword" name="password" type="password" placeholder="Digite sua senha" required autocomplete="current-password"></div><label for="loginOtp">Código do autenticador (administrador)</label><div class="input-icon"><svg><use href="#i-shield"/></svg><input id="loginOtp" name="otp" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="6 dígitos · somente administrador"></div><div id="loginError" class="form-error" role="alert" hidden></div><button type="submit" class="btn btn-primary btn-login">Entrar na plataforma <svg><use href="#i-arrow"/></svg></button></form><div class="login-hint"><svg><use href="#i-info"/></svg> Área reservada a administradores e entregadores cadastrados.</div></div><div class="login-footer">© <span id="copyrightYear"></span> Plataforma de entregas. Todos os direitos reservados.</div></div>
+</section>
+
+<div id="appShell" class="shell" hidden>
+  <aside class="sidebar" id="sidebar"><div class="sidebar-logo symbol-brand"><img src="/brand/logo-symbol-64.png" alt="Logo da plataforma" class="brand-logo-image sidebar-logo-image"><div class="sidebar-brand-copy"><strong>PAINEL</strong><small>Gestão de entregas</small></div></div><div class="sidebar-menu"><div class="sidebar-label">MENU PRINCIPAL</div><button type="button" class="nav-item active" data-view="dashboard"><svg><use href="#i-grid"/></svg> Visão geral</button><button type="button" class="nav-item" data-view="board"><svg><use href="#i-bell"/></svg> Central de entregas <span class="nav-count" id="navBoardCount">•</span></button><button type="button" class="nav-item" data-view="orders"><svg><use href="#i-package"/></svg> Entregas <span id="navOrderCount" class="nav-count">0</span></button><button type="button" class="nav-item admin-only" data-view="ifood"><svg><use href="#i-package"/></svg> Integração iFood</button><button type="button" class="nav-item admin-only" data-view="stores"><svg><use href="#i-package"/></svg> Lojas e tarifas</button><button type="button" class="nav-item admin-only" data-view="tracking"><svg><use href="#i-pin"/></svg> GPS da equipe</button><button type="button" class="nav-item admin-only" data-view="audit"><svg><use href="#i-shield"/></svg> Auditoria</button><button type="button" class="nav-item" data-view="history" id="navHistory"><svg><use href="#i-wallet"/></svg> Histórico e ganhos</button><button type="button" class="nav-item admin-only" data-view="riders"><svg><use href="#i-bike"/></svg> Entregadores</button><button type="button" class="nav-item admin-only" data-view="finance"><svg><use href="#i-wallet"/></svg> Financeiro</button><div class="sidebar-label secondary-label">CONTA</div><button type="button" class="nav-item" data-view="account"><svg><use href="#i-user"/></svg> Minha conta</button></div><div class="sidebar-bottom"><div class="help-card"><div class="help-icon"><svg><use href="#i-shield"/></svg></div><strong>Operação organizada</strong><span>Segurança e praticidade em cada entrega.</span></div><button type="button" class="side-logout" id="logoutButton"><svg><use href="#i-log-out"/></svg> Sair da conta</button></div></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="app-area"><header class="topbar"><div class="topbar-left"><button type="button" class="mobile-menu icon-button" id="mobileMenu" aria-label="Abrir menu"><svg><use href="#i-menu"/></svg></button><div class="breadcrumbs"><span>Workspace</span><span class="crumb-divider">/</span><strong id="breadcrumbTitle">Visão geral</strong></div></div><div class="topbar-right"><span class="today-label" id="todayLabel"></span><span class="topbar-separator"></span><div class="user-pill"><span class="avatar" id="topAvatar">AD</span><span class="user-meta"><strong id="topUser">Administrador</strong><small id="topRole">Gestor</small></span></div></div></header><main class="content" id="viewContent"></main><footer class="app-footer"><span><img src="/brand/logo-symbol-32.png" alt="" class="footer-logo"> Plataforma de gestão</span><span>Desenvolvido para operações de entregas privadas</span></footer></div>
+</div>
+<div class="modal-layer" id="modalLayer" hidden><div class="modal-backdrop" data-close-modal></div><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><header class="modal-header"><div><div class="eyebrow">GESTÃO DE ENTREGAS</div><h2 id="modalTitle">Nova entrega</h2></div><button type="button" class="icon-button" data-close-modal aria-label="Fechar"><svg><use href="#i-x"/></svg></button></header><div id="modalBody" class="modal-body"></div></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/app.js?v=2.1.1" defer></script>
+</body>
+</html>
